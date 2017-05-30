@@ -8,6 +8,7 @@
 
     <!-- Chamada da folha de estilo -->
     <link rel="stylesheet" type="text/css" href="dist/css/jquery.bxslider.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="dist/css/main.css">
 
     <!-- Chamada das libs js-->
@@ -17,6 +18,13 @@
 </head>
 <body>
     <header class="header">
+        <ul class="slider-header">
+            <li><img src="dist/img/background.png" /></li>
+            <li><img src="dist/img/background.png" /></li>
+            <li><img src="dist/img/background.png" /></li>
+            <li><img src="dist/img/background.png" /></li>
+        </ul>
+        
         <div class="container">
             <div class="top">
                 <div class="left">
@@ -25,34 +33,213 @@
                     </figure>
                 </div>
                 <div class="right">
-                    <figure>
-                        <img src="dist/img/facebook.png" alt="facebook icone" title="facebook icone">
-                    </figure>
+                    <a href="javascript:;" class="socials">
+                        <img class="image" src="dist/img/facebook.png" alt="facebook icone" title="facebook icone">
+                    </a>
+
+                    <a href="javascript:;" class="socials">
+                        <img class="image" src="dist/img/twitter.png" alt="facebook icone" title="facebook icone">
+                    </a>
                 </div>    
             </div>
             
             <div class="mid"> 
                 <nav class="menu">
                     <ul class="wrap">
-                        <li class="item"><a href="javascript:;"> Home</a></li>
-                        <li class="item"><a href="javascript:;"> Garden</a></li>
-                        <li class="item"><a href="javascript:;"> Arquitetura</a></li>
-                        <li class="item"><a href="javascript:;"> Irrigação</a></li>
-                        <li class="item"> 
+                        <li class="item active"><a class="link" href="javascript:;"> Home</a></li>
+                        <li class="item"><a class="link" href="javascript:;"> Garden</a></li>
+                        <li class="item"><a class="link" href="javascript:;"> Arquitetura</a></li>
+                        <li class="item"><a class="link" href="javascript:;"> Irrigação</a></li>
+                        <li class="item hasSubMenu"> 
                             Produtos
                             <ul class="sub-menu">
-                                <li class="item"><a href="javascript:;"> Plantas</a></li>
-                                <li class="item"><a href="javascript:;"> Ferramentas e Insumos</a></li>
-                                <li class="item"><a href="javascript:;"> Móveis e artigos de decoração</a></li>
+                                <li class="item"><a class="link" href="javascript:;"> Plantas</a></li>
+                                <li class="item"><a class="link" href="javascript:;"> Ferramentas e Insumos</a></li>
+                                <li class="item"><a class="link" href="javascript:;"> Móveis e artigos de decoração</a></li>
                             </ul>
                         </li>
-                        <li class="item"><a href="javascript:;"> Dicas</a></li>
-                        <li class="item"><a href="javascript:;"> Conheça-nos</a></li>
-                        <li class="item"><a href="javascript:;"> Contato</a></li>
+                        <li class="item"><a class="link" href="javascript:;"> Dicas</a></li>
+                        <li class="item"><a class="link" href="javascript:;"> Conheça-nos</a></li>
+                        <li class="item"><a class="link" href="javascript:;"> Contato</a></li>
                     </ul>
                 </nav>
             </div>
+
+            <div class="bottom">
+                <div class="item">
+                    <figure class="photo">
+                        <img class="image" src="dist/img/icon-garden.png" alt="garden item" title="garden item">
+                    </figure>
+
+                    <div class="text">
+                        <h2 class="title">Garden</h2>
+
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <figure class="photo">
+                        <img class="image" src="dist/img/icon-garden.png" alt="garden item" title="garden item">
+                    </figure>
+
+                    <div class="text">
+                        <h2 class="title">Arquitetura</h2>
+
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <figure class="photo">
+                        <img class="image" src="dist/img/icon-garden.png" alt="garden item" title="garden item">
+                    </figure>
+
+                    <div class="text">
+                        <h2 class="title">Paisagismo</h2>
+
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <figure class="photo">
+                        <img class="image" src="dist/img/icon-garden.png" alt="garden item" title="garden item">
+                    </figure>
+
+                    <div class="text">
+                        <h2 class="title">Irrigação</h2>
+
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+
+    <main class="main">
+        <section class="our-projects">
+            <div class="container">
+                <h1 class="title-page">nossos projetos</h1>
+
+                <section class="slider-projects">
+                    <article class="slide-item">
+                        <figure class="photo">
+                            <img class="image" src="dist/img/projects/slider1.png" />
+                        </figure>
+
+                        <div class="text">
+                            <h1 class="title">Jardim Japonês</h1>
+
+                            <p class="description">Requinte e cultura japonesa na decoração externa</p>
+                        </div>
+                    </article>
+                    <article class="slide-item">
+                        <figure class="photo">
+                            <img class="image" src="dist/img/projects/slider2.png" />
+                        </figure>
+                        
+                        <div class="text">
+                            <h1 class="title">Jardim Japonês</h1>
+
+                            <p class="description">Requinte e cultura japonesa na decoração externa</p>
+                        </div>
+                    </article>
+                    <article class="slide-item">
+                        <figure class="photo">
+                            <img class="image" src="dist/img/projects/slider2.png" />
+                        </figure>
+
+                        <div class="text">
+                            <h1 class="title">Jardim Japonês</h1>
+
+                            <p class="description">Requinte e cultura japonesa na decoração externa</p>
+                        </div>
+                    </article>
+
+                     <article class="slide-item">
+                        <figure class="photo">
+                            <img class="image" src="dist/img/projects/slider1.png" />
+                        </figure>
+
+                        <div class="text">
+                            <h1 class="title">Jardim Japonês</h1>
+
+                            <p class="description">Requinte e cultura japonesa na decoração externa</p>
+                        </div>
+                    </article>
+                    <article class="slide-item">
+                        <figure class="photo">
+                            <img class="image" src="dist/img/projects/slider2.png" />
+                        </figure>
+                        
+                        <div class="text">
+                            <h1 class="title">Jardim Japonês</h1>
+
+                            <p class="description">Requinte e cultura japonesa na decoração externa</p>
+                        </div>
+                    </article>
+                    <article class="slide-item">
+                        <figure class="photo">
+                            <img class="image" src="dist/img/projects/slider2.png" />
+                        </figure>
+
+                        <div class="text">
+                            <h1 class="title">Jardim Japonês</h1>
+
+                            <p class="description">Requinte e cultura japonesa na decoração externa</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <section class="store-window">
+            <div class="container">
+                <h1 class="title-page">vitrine <img class="image" src="dist/img/logo.png" alt="logo lorem ipsum" title="logo lorem ipsum"></h1>
+
+                <section class="wrap">
+                    <aside class="left">
+                        <figure class="photo">
+                            <img class="image" src="dist/img/store_window/img.png" alt="">
+                        </figure>
+                    </aside>
+
+                    <article class="right">
+                        <div class="text">
+                            <h1 class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            </p>
+                        </div>
+
+                        <div class="slider-store-window">
+                            <figure>
+                                <img src="dist/img/store_window/slider1.png" alt="">
+                            </figure>
+                            <figure>
+                                <img src="dist/img/store_window/slider1.png" alt="">
+                            </figure>
+                            <figure>
+                                <img src="dist/img/store_window/slider1.png" alt="">
+                            </figure>
+                            <figure>
+                                <img src="dist/img/store_window/slider1.png" alt="">
+                            </figure>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
